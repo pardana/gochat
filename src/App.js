@@ -11,6 +11,22 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            if (this.props.socket) {
+              this.props.socket.send(
+                JSON.stringify({
+                  type: "Hello",
+                  data: "World",
+                })
+              );
+            }
+          }}
+        >
+          Send Message
+        </button>
+
         <BrowserRouter>
           <Switch>
             <Route
