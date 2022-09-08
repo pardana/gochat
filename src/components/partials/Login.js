@@ -60,9 +60,11 @@ class Login extends Component {
                     }
                   />
                 </div>
-                <button className="btn btn-primary" type="submit">
-                  Login
-                </button>
+                <div className="text-center">
+                  <button className="btn btn-primary" type="submit">
+                    Login
+                  </button>
+                </div>
               </form>
             </div>
           </div>
